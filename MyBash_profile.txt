@@ -1,0 +1,22 @@
+
+echo "Welcome, Wade"
+export PS1=“> "
+
+alias dt='date "+%F %T"'
+
+alias ..=“cd .."
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias la='ls -lah $LS_COLOR'
+# awesome!  CD AND LA. I never use 'cd' anymore...
+function cl(){ cd "$@" && la; }
+
+alias edit='subl'
+alias f='open -a Finder ./'
+
+alias myip='curl ip.appspot.com' 
+
+function cdn(){ for i in `seq $1`; do cd ..; done;}
+#cdn n; where n stands for  number of folders you want to traverse.
+

@@ -4,13 +4,15 @@ export PS1=“> "
 
 alias dt='date "+%F %T"'
 
-alias ..=“cd .."
+alias ..="cd .."
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
 alias la='ls -lah $LS_COLOR'
-# awesome!  CD AND LA. I never use 'cd' anymore...
+
+#cd & la/ls. 
 function cl(){ cd "$@" && la; }
+function cdl(){ cd "$@" && ls; }
 
 alias edit='subl'
 alias f='open -a Finder ./'

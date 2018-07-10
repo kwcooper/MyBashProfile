@@ -26,6 +26,8 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# google-drive
+# google-drive mounts
 mount | grep "${HOME}/GoogleDrive" >/dev/null || /usr/bin/google-drive-ocamlfuse -label officialkwade "${HOME}/officialkwade" 
 mount | grep "${HOME}/GoogleDrive" >/dev/null || /usr/bin/google-drive-ocamlfuse -label codingCoop "${HOME}/codingCoop"
+
+# startup logging here? 

@@ -76,8 +76,7 @@ esac
 
 
 # Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
+# moved into ~/.bash_aliases, 
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -102,9 +101,17 @@ fi
 #echo enable wol 
 #sudo ethtool -s enp2s0 wol g
 
-#cd & la/ls. (depreciated, see bash_aliases)
-# function cl(){ cd "$@" && la; }
-# function cdl(){ cd "$@" && ls; }
-# #cdn n; where n stands for  number of folders you want to traverse.
-# function cdn(){ for i in `seq $1`; do cd ..; done;}
+#cd & la/ls. 
+function cla(){ cd "$@" && la; } 
+function cdl(){ cd "$@" && ls; }
+#cdn n; where n stands for  number of folders you want to traverse.
+#function cdn(){ for i in `seq $1`; do cd ..; done;}
+
+#sources:
+# https://www.tldp.org/LDP/abs/html/sample-bashrc.html <- lots of goodies
+
+echo -e 'Hello Keiland\n'
+
+# added by Anaconda3 installer
+export PATH="/home/wade/anaconda3/bin:$PATH"
 

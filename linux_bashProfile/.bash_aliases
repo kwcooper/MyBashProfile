@@ -30,7 +30,7 @@ alias dt='date "+%F %T"'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias cl='cd && ls'
+#alias cl='cd && ls' # views but doesn't move
 
 # ls aliases
 alias lfo='ls -alF'
@@ -63,3 +63,8 @@ alias mynet='sudo nmap -sn 192.168.1.0/24'
 alias mynet2='sudo arp-scan --retry=8 --ignoredups -I eth0 192.168.1.0/24'
 alias myip='curl ipinfo.io/ip' #grab external ip 
 #alias myip='curl ip.appspot.com' 
+
+# mount google drives bc the fix i wrote broke once
+# and could break again and who has time for that?
+alias mtGDCC="google-drive-ocamlfuse -label codingCoop ~/codingCoop && echo 'codingCoop mounted'"
+alias mtGDOW="google-drive-ocamlfuse -label officialkwade ~/officialkwade && echo 'officialkwade mounted'"

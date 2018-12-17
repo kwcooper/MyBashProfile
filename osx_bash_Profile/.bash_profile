@@ -15,3 +15,5 @@ export PATH
 
 # add subl alias like mac has
 alias subl="open -a /Applications/Sublime\ Text.app"
+
+alias jnb="jupyter notebook"

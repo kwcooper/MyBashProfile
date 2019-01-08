@@ -1,5 +1,6 @@
 # OSX bash_profile - for use in all sessions
 # mac's terminal looks here, not bashrc as expected --they don't exist on my machine
+# github version
 
 # added by Anaconda3 4.3.1 installer
 export PATH="/anaconda/bin:$PATH"
@@ -17,3 +18,6 @@ export PATH
 alias subl="open -a /Applications/Sublime\ Text.app"
 
 alias jnb="jupyter notebook"
+
+alias edit="open -a TextEdit"
+

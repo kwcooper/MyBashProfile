@@ -25,7 +25,7 @@ alias txtedit="open -a TextEdit"
 alias bp="subl ~/.bash_profile"
 
 
-# ls aliases
+# ls aliases - don't seem to work well...
 alias lfo='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -35,5 +35,45 @@ alias ldate='ls -ltr'      #  Sort by date, recent last
 alias ltime='ls -ltcr'     #  Sort by last edited
 alias lr='ll -R'           #  Recursive ls
 alias ls="ls -1 | column -c 100"
+
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+
+##
+# Your previous /Users/K/.bash_profile file was backed up as /Users/K/.bash_profile.macports-saved_2019-04-08_at_07:52:33
+##
+
+# MacPorts Installer addition on 2019-04-08_at_07:52:33: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+# GIT STUFF
+alias ga="git add *"
+alias gc="git commit -m"
+alias gpom="git push origin master"
+
+# Git Add Commit bash function
+gac () {
+   git add *
+   git commit -m "$1"
+}
+
+# because I ALWAYS forget
+git? () {
+   echo " "
+   echo "git add *"
+   echo "git commit -m \"updates\" "
+   echo "git push origin master"
+   echo " "
+   echo "My alias's: ga, gc \"ud\", gpom, and also gac FN "
+   echo " "
+}
+
+
+
 
 

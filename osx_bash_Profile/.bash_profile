@@ -36,6 +36,9 @@ alias ltime='ls -ltcr'     #  Sort by last edited
 alias lr='ll -R'           #  Recursive ls
 alias ls="ls -1 | column -c 100"
 
+# Grab my ip
+alias myip='curl ipinfo.io/ip' #grab external ip z
+
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
@@ -56,6 +59,8 @@ alias ga="git add *"
 alias gc="git commit -m"
 alias gpom="git push origin master"
 
+
+
 # Git Add Commit bash function
 gac () {
    git add *
@@ -72,8 +77,6 @@ git? () {
    echo "My alias's: ga, gc \"ud\", gpom, and also gac FN "
    echo " "
 }
-
-
 
 
 

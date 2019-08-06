@@ -67,5 +67,5 @@ alias myip='curl ipinfo.io/ip' #grab external ip
 
 # mount google drives bc the fix i wrote broke once
 # and could break again and who has time for that?
-alias mtGDCC="google-drive-ocamlfuse -label cco_GD ~/cco_GD && echo 'codingCoop mounted'"
-alias mtGDOW="google-drive-ocamlfuse -label okw_GD ~/okw_GD && echo 'officialkwade mounted'"
+alias MTCC="google-drive-ocamlfuse -label cco_GD ~/cco_GD && echo 'codingCoop mounted'"
+alias MTOK="google-drive-ocamlfuse -label okw_GD ~/okw_GD && echo 'officialkwade mounted'"

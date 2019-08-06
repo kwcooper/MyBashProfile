@@ -1,5 +1,6 @@
 # a place to organize aliases
 # sourced by ~/.bashrc to be used systemwide during interactive non-login shell
+# Updated for 1908XX linux config
 
 # bad memory yeah?
 alias mycmds='cat ~/.bash_profile'
@@ -57,14 +58,14 @@ alias cpufo='lscpu'
 # for tarballs
 alias opentar='tar -xvfz'
 
-# scan network
+# Networking
 # do i need sudo?
-alias mynet='sudo nmap -sn 192.168.1.0/24'
-alias mynet2='sudo arp-scan --retry=8 --ignoredups -I eth0 192.168.1.0/24'
+alias mynet='sudo nmap -sn 192.168.1.1/24'
+alias mynet2='sudo arp-scan --retry=8 --ignoredups -I eth0 192.168.1.1/24'
 alias myip='curl ipinfo.io/ip' #grab external ip 
 #alias myip='curl ip.appspot.com' 
 
 # mount google drives bc the fix i wrote broke once
 # and could break again and who has time for that?
-alias mtGDCC="google-drive-ocamlfuse -label codingCoop ~/codingCoop && echo 'codingCoop mounted'"
-alias mtGDOW="google-drive-ocamlfuse -label officialkwade ~/officialkwade && echo 'officialkwade mounted'"
+alias mtGDCC="google-drive-ocamlfuse -label cco_GD ~/cco_GD && echo 'codingCoop mounted'"
+alias mtGDOW="google-drive-ocamlfuse -label okw_GD ~/okw_GD && echo 'officialkwade mounted'"

@@ -69,3 +69,6 @@ alias myip='curl ipinfo.io/ip' #grab external ip
 # and could break again and who has time for that?
 alias MTCC="google-drive-ocamlfuse -label cco_GD ~/cco_GD && echo 'codingCoop mounted'"
 alias MTOK="google-drive-ocamlfuse -label okw_GD ~/okw_GD && echo 'officialkwade mounted'"
+
+# GIT
+alias gpom="git push origin master"

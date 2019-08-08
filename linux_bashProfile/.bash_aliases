@@ -72,3 +72,10 @@ alias MTOK="google-drive-ocamlfuse -label okw_GD ~/okw_GD && echo 'officialkwade
 
 # GIT
 alias gpom="git push origin master"
+
+gac () { 
+	echo "Adding and commiting..."
+    git add * 
+    git commit -am "$*"
+    #git push origin master
+}

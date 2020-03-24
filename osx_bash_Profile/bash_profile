@@ -1,0 +1,41 @@
+
+# OSX bash_profile - for use in all sessions
+# mac's terminal looks here, not bashrc as expected --they don't exist on my machine
+# Things are weird now with the swich to zprofiles, but this still source's
+echo "Using commands from bash_profile...\n"
+
+
+#export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+
+# ALIAS's
+alias p3="python3"
+alias jnb="jupyter notebook"
+alias txtedit="open -a TextEdit"
+alias bp="subl ~/.bash_profile"
+alias myip='curl ipinfo.io/ip' #grab external ip 
+alias gpom="git push origin master"
+
+# Git Add Commit bash function
+gac () {
+   git add *
+   git commit -m "$1"
+}
+
+
+# added by Anaconda3 2019.10 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/k/opt/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     \eval "$__conda_setup"
+# else
+#     if [ -f "/Users/k/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/Users/k/opt/anaconda3/etc/profile.d/conda.sh"
+#         CONDA_CHANGEPS1=false conda activate base
+#     else
+#         \export PATH="/Users/k/opt/anaconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# <<< conda init <<<
